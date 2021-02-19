@@ -1,0 +1,33 @@
+﻿Entidad Federativa,State,region
+Aguascalientes,D_AGS,1
+Baja California Sur,D_BCS,3
+Baja California,D_BC,2
+Campeche,D_CAMP,4
+Chiapas,D_CHPS,7
+Chihuahua,D_CHIH,8
+CDMX,D_CDMX,9
+Coahuila,D_COAH,5
+Colima,D_COL,6
+Durango,D_DGO,10
+México,D_MEX,15
+Guanajuato,D_GTO,11
+Guerrero,D_GRO,12
+Hidalgo,D_HDL,13
+Jalisco,D_JAL,14
+Michoacán,D_MICH,16
+Morelos,D_MOR,17
+Nayarit,D_NAY,18
+Nuevo León,D_NL,19
+Oaxaca,D_OAX,20
+Puebla,D_PUE,21
+Querétaro,D_QRO,22
+Quintana Roo,D_QROO,23
+San Luis Potosí,D_SLP,24
+Sinaloa,D_SIN,25
+Sonora,D_SON,26
+Tabasco,D_TAB,27
+Tamaulipas,D_TAM,28
+Tlaxcala,D_TLAX,29
+Veracruz,D_VER,30
+Yucatán,D_YUC,31
+Zacatecas,D_ZAC,32
