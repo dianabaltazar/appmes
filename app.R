@@ -372,7 +372,7 @@ Detenidos <- substring(c("23. Detenidos en Flagrancia", "25. Detenidos por Caso 
 
 def_df_var <- readxl::read_xlsx("data/definiciones_c.xlsx", sheet = "Variables")
 def_df_ind <- readxl::read_xlsx("data/definiciones_c.xlsx", sheet = "Indicadores")
-db_df <- readxl::read_xlsx("data/BD Meaestra.xlsx",
+db_df <- readxl::read_xlsx("data/BD Maestra.xlsx",
                            sheet = "Concentrado Primera Etapa"
 )
 # quitar los na por cero que causan problema al desplegar info
@@ -404,7 +404,6 @@ edos <-
   st_transform(crs = 4326) %>%
   mutate(cve_edo = str_pad(entidad, 2, pad = "0")) %>%
   mutate(cve_edo = as.numeric(cve_edo))
-
 
 
 
@@ -1018,7 +1017,7 @@ server <- function(input, output) {
   ############################## Modal de bienvenida
   showModal(modalDialog(
     title = "Bienvenida/o",
-    HTML("Información actualizada al <b>31 de diciembre de 2020</b>"),
+    HTML("Información actualizada al <b>31 de marzo de 2021</b>"),
     
     easyClose = T,
     footer = modalButton("Ok") # actionButton("ayuda", label="Guia de Usuario")
