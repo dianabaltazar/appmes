@@ -1017,7 +1017,7 @@ server <- function(input, output) {
   ############################## Modal de bienvenida
   showModal(modalDialog(
     title = "Bienvenida/o",
-    HTML("Información actualizada al <b>30 de junio de 2021</b>"),
+    HTML("Información actualizada al <b>30 de septiembre de 2021</b>"),
     
     easyClose = T,
     footer = modalButton("Ok") # actionButton("ayuda", label="Guia de Usuario")
