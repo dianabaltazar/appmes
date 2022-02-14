@@ -19,21 +19,21 @@
 #####################################################
 #----------Packages (uncoment as required) ---------#
 #ptions(java.parameters = "-Xmx8000m")
+#install.packages("openxlsx")
 library(tidyverse)
 library(readxl)
 library(xlsx)
-install.packages("openxlsx")
 library(openxlsx)
 #library(XLConnect)
 # library(RDCOMClient)
 # library(lubridate)
 # library(stringi)
 # library(rvest)
-# library(docxtractr)
+# library(docxtractr)t
 # library(plotly)
 
 # ftf nuestros dataframes de partida
-db_new <- read_xlsx("/Users/dianapaola/Documents/GitHub/appmes/data/BD Meaestra.xlsx",
+db_new <- read_xlsx("/Users/dianapaola/Documents/GitHub/appmes/data/BD Maestra4T.xlsx",
                           "Concentrado Primera Etapa")
 # db_4_2019 <- read_xlsx("datos/database_mes_2019_IV.xlsx",
 #                   "database_mes_2019_IV")
@@ -152,7 +152,7 @@ db_ind <- db_new %>% mutate(
     (`64. PPL Procesada (Prisión Preventiva)`+`65. PPL Cumpliendo Condena`)*100
 )
 
-write.xlsx(db_ind, "indicadores.xlsx")
+write.xlsx(db_ind, "indicadores4T.xlsx")
 write.xlsx(db_ind, "BD Meaestra.xlsx")
 
 
