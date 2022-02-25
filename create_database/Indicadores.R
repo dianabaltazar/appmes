@@ -122,7 +122,7 @@ db_ind <- db_new %>% mutate(
     ,
   #indi7
   `72. Indicador 7: Carpetas de investigación vinculadas a proceso en trámite`=
-    (`45. PVP Cumplida Suspensión Condicional Proc.`+`51. PVP en Trámite OEMASC sin Acuerdo`+
+    (`44. PVP en Trámite Suspensión Condicional Proc.`+`51. PVP en Trámite OEMASC sin Acuerdo`+
        `52. PVP en Trámite OEMASC con Acuerdo`+`42. PVP en Trámite Juez de Control`+
        `47. PVP en Trámite Procedimiento Abreviado`)/
     (`42. PVP en Trámite Juez de Control`+`43. PVP por Criterio de Oportunidad`+
