@@ -394,7 +394,7 @@ varlist <- colnames(db_df)[10:ncol(db_df)]
 
 
 db_ind <- readxl::read_xlsx("data/indicadores.xlsx",
-                            sheet = "indicadores")
+                            sheet = "Sheet 1")
 db_ind <- db_ind %>% magrittr::set_colnames(substring(colnames(db_ind),5))
 
 codigos <- read_csv("data/Codigos_INEGI.csv")
@@ -1017,7 +1017,7 @@ server <- function(input, output) {
   ############################## Modal de bienvenida
   showModal(modalDialog(
     title = "Bienvenida/o",
-    HTML("Información actualizada al <b>31 de diciembre de 2021</b>"),
+    HTML("Información actualizada al <b>31 de marzo de 2022</b>"),
     
     easyClose = T,
     footer = modalButton("Ok") # actionButton("ayuda", label="Guia de Usuario")

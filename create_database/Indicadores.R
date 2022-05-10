@@ -1,9 +1,8 @@
 ######################################################
 ######################################################
-# Dev: Subdirector MSc Erick René Hernández Cervantes
 # Secretaría de Gobernación
 # Unidad de Apoyo al Sistema de justicia
-# Dirección de evaluación
+# Dirección de Evaluación
 # Project:  MES ######
 # Script:   Unificacion ######
 # Notes:  Vamos a hacer una unificación de tres tablas de datos:
@@ -152,7 +151,7 @@ db_ind <- db_new %>% mutate(
     (`64. PPL Procesada (Prisión Preventiva)`+`65. PPL Cumpliendo Condena`)*100
 )
 
-write.xlsx(db_ind, "indicadores4T.xlsx")
+write.xlsx(db_ind, "indicadores.xlsx")
 write.xlsx(db_ind, "BD Meaestra.xlsx")
 
 
