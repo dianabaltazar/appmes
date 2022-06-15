@@ -152,7 +152,7 @@ db_ind <- db_new %>% mutate(
 )
 
 write.xlsx(db_ind, "indicadores.xlsx")
-write.xlsx(db_ind, "BD Meaestra.xlsx")
+#write.xlsx(db_ind, "BD Meaestra.xlsx")
 
 
 
