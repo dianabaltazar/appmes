@@ -698,7 +698,8 @@ Sistema de Justicia Penal aprobados por el Consejo Nacional de Seguridad Públic
                              selected = NA
                  ),
                  uiOutput("ui_indicadores"),
-                 htmlOutput("definiciones_indicadores")
+                 htmlOutput("definiciones_indicadores"),
+                 htmlOutput("formulas_indicadores")
                  
                ),
                column(
@@ -1017,7 +1018,7 @@ server <- function(input, output) {
   ############################## Modal de bienvenida
   showModal(modalDialog(
     title = "Bienvenida/o",
-    HTML("Información actualizada al <b>31 de marzo de 2022</b>"),
+    HTML("Información actualizada al <b>30 de junio de 2022</b>"),
     
     easyClose = T,
     footer = modalButton("Ok") # actionButton("ayuda", label="Guia de Usuario")
@@ -1107,6 +1108,11 @@ server <- function(input, output) {
   output$definiciones_indicadores <- renderText({
     paste("<b>Definición:</b>", def_df_ind$Definicion[def_df_ind$Indicador==input$indicador_mapa])
   })
+  
+  output$formulas_indicadores <- renderText({
+    paste("<b>Fórmula:</b>", def_df_ind$Formula[def_df_ind$Indicador==input$indicador_mapa])
+  })
+  
   output$ui_indicadores <- renderUI({
     if (strsplit(input$trims_indicadores, "-")[[1]][3] == 2017) {
       tagList(
@@ -1145,6 +1151,7 @@ server <- function(input, output) {
     ifelse(length(def_df_var$Definicion[def_df_var$Variable==input$var_var])>0,
       paste("<b>Definición:</b>", def_df_var$Definicion[def_df_var$Variable==input$var_var]),"")
   })
+  
   output$ui_vars <- renderUI({
     if (input$var_group == "Agrupadas") {
       tagList(
